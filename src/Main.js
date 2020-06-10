@@ -81,7 +81,7 @@ export default class Main extends Component {
     render() {
 
         const msgIDList = this.state.messageBoxUUIDList.map((item) => {
-            return(<div key={item} onClick={()=>{this.getMessageDetails(item)}}>{item}</div>)
+            return(<div key={item} style={{cursor:"pointer"}} onClick={()=>{this.getMessageDetails(item)}}>{item}</div>)
         })
 
         return (
